@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * React filters module.
+ */
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function react_filters_views_pre_render(ViewExecutable $view) {
+  if ($view->id() === 'events' && $view->current_display === 'page_1') {
+    $view->element['#attached']['library'][] = 'react_filters/react-filters';
+  };
+}

@@ -1,0 +1,7 @@
+name: 'React Video Player'
+type: module
+description: 'Provides a simple React Video player'
+core: 8.x
+package: 'Drupalcamp'
+dependencies:
+  - block

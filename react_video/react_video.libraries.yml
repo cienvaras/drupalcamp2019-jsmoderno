@@ -1,0 +1,4 @@
+react-video:
+  version: 1.x
+  js:
+    js/dist/react-video.js: {}
